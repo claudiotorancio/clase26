@@ -64,42 +64,44 @@
         </section>
 
         <!-- Seccion Portafolio -->
-        <section id="portafolio" class="row bg-1 fg-2 py-12 mx-0">
-            <div class=" text-center">
-                <h2>Portafolio</h2>
+        <section id="portafolio" class="bg-1 fg-2 py-12 mx-0">
+            <div class="container col-12 lg:col-9">
+                <h2 class="text-center">Portafolio</h2>
                 <div class="d-flex gap-2 justify-content-center py-6">
                     <div class="line"></div>
                     <i class="fa-solid fa-star fa-lg"></i>
                     <div class="line"></div>
                 </div>
-                <div class="container d-flex flex-wrap justify-content-center py-10 gap-4 " data-tarjetas>
 
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 " data-tarjetas>
                     <!-- Render dinamico de cards -->
 
                 </div>
+
             </div>
         </section>
 
         <!-- Seccion Sobre Mi -->
 
-        <section class=" bg-subtle-secondary fg-2 py-12" id="sobre-mi">
-            <div class="container col-12 lg:col-9 d-flex flex-column align-items-center">
-                <h2>Sobre Mi</h2>
-                <div class="d-flex gap-2 align-items-center py-6">
+        <section class="fg-2 py-12" id="sobre-mi">
+            <div class="container col-12 lg:col-9">
+                <h2 class="text-center">Sobre Mi</h2>
+                <div class="d-flex gap-2 justify-content-center align-items-center py-6">
                     <div class="line "></div>
                     <i class="fa-solid fa-star fa-lg"></i>
                     <div class="line"></div>
                 </div>
-                <div class="row ">
-                    <p class="lg:col-6"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse deserunt
+                <div class="grid grid-cols-1 lg:grid-cols-2 py-10">
+                    <p class="text-start"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse deserunt
                         quae velit rem rerum excepturi a deleniti, consectetur provident corrupti nihil dolorem unde
                         corporis quos, tempore vel iusto temporibus ducimus?</p>
-                    <p class="lg:col-6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem libero dicta
+                    <p class="text-start"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem libero dicta
                         accusantium in pariatur nam enim aliquid exercitationem cumque consequatur, eaque maxime debitis
                         doloremque corporis ipsam. Reiciendis pariatur blanditiis molestiae.</p>
                 </div>
-                <!-- Descargad e cv -->
-                <div class="pt-5">
+                <!-- Descarga de cv -->
+                <div class="text-center pt-5">
                     <a class="theme-inverse btn-outline btn-solid theme-primary p"
                         href="https://drive.google.com/file/d/16z-BUkm4fSNNV41Yh5IEnpeFyATV60OH/view" target="_blank"><i
                             class="fa-solid fa-download"></i>
@@ -108,12 +110,12 @@
             </div>
         </section>
 
-        <!-- Sweccion contacto -->
+        <!-- Seccion contacto -->
 
         <section class="fg-2 py-12 " id="contacto">
             <div class="container col-12 lg:col-9">
                 <h2 class="text-center">Contacto</h2>
-                <div class="d-flex justify-content-center text-center gap-2  py-6">
+                <div class="d-flex justify-content-center  gap-2  py-6">
                     <div class="line"></div>
                     <i class="fa-solid fa-star fa-lg"></i>
                     <div class="line"></div>
@@ -145,16 +147,16 @@
 
     <!-- Seccion Footer -->
 
-    <footer class="  justify-content-center bg-1 fg-2 pt-12 ">
-        <div class="container-fluid mx-0 py-12">
-            <div class="row align-items-center ">
-                <div class="text-center lg:col-4 py-6">
+    <footer class="bg-1 fg-2">
+        <div class="container-fluid py-10">
+            <div class="grid grid-cols-1 lg:grid-cols-3 align-items-center ">
+                <div class="text-center ">
                     <h2 class="fw-bold">MI LUGAR</h2>
                     <p class="mb-0">Calle N°</p>
                     <p>Ciudad, CP</p>
                 </div>
                 <!-- espacio para redes sociales -->
-                <div class="text-center lg:col-4 py-6">
+                <div class="text-center">
                     <h2 class="fw-bold">SIGAMOS CONECTADOS</h2>
                     <div class=" d-flex justify-content-center align-items-center pt-3 links-redes gap-4 ">
                         <a href="#"><i class=" fa-brands fa-facebook "></i></a>
@@ -162,12 +164,13 @@
                         <a href=""><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
-                <div class=" lg:col-4 text-center py-6">
+                <div class="text-center">
                     <h2 class="fw-bold">SOBRE MI</h2>
                     <p>Soy una persona creativa y emprendedora</p>
                 </div>
+                
+                        </div>
             </div>
-        </div>
         <div class="text-center py-3 bg-inverse fg-white"> Todos los derechos reservados</div>
     </footer>
 

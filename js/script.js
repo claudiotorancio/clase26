@@ -11,7 +11,7 @@ if (containerTarjetas) {
 
     //Creacion del elemento div
     const card = document.createElement('div');
-    card.className = 'card bg-1 position-relative'
+    card.className = 'card border-0 bg-1 position-relative'
 
     card.innerHTML = `      
                        <img  src="${dato.imagen}" class="img-fluid" alt="..." data-imagen>
