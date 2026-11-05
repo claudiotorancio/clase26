@@ -45,10 +45,6 @@
     </header>
     <main>
 
-        <!-- Modal -->
-        <dialog class="dialog h-fit " data-bs-toggle="dialog" id="myDialog">
-            <div class="modal-contenido overflow-visible"></div>
-        </dialog>
 
         <!-- Seccion Hero -->
         <section class="d-flex flex-column align-items-center py-12">
@@ -73,8 +69,249 @@
                     <div class="line"></div>
                 </div>
 
-
+                <!-- Seccon tarjetas -->
+                <!-- Lemon Pie -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 " data-tarjetas>
+                    <div class="card border-0 bg-1 position-relative">
+                        <img src="./img/lemon-pie.png" class="img-fluid" alt="...">
+                        <div class="card-body text-center py-0">
+                            <h4 class="card-title ">Lemon Pie</h4>
+                        </div>
+                        <!-- Icono informativo -->
+                        <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                            <li class="position-absolute  icon" data-bs-toggle="dialog" data-bs-target="#lemon-pie">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Modal lemon pie -->
+                    <dialog class="dialog h-fit " data-bs-toggle="dialog" id="lemon-pie">
+                        <!-- Encabezado y boton cerrar -->
+                        <div class="dialog-header flex-column py-1">
+                            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+                                aria-label="Close"></button>
+                            <!-- Lineas y titulo -->
+                            <div>
+                                <h2>Lemon Pie</h2>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center py-6">
+                                <div class="line"></div>
+                                <i class="fa-solid fa-star fa-lg"></i>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class='modal-body text-center'>
+                            <img src="./img/lemon-pie.png" class="img-fluid" alt="..." data-imagen>
+                            <p>Toda la descripción</p>
+                        </div>
+                        <div class="dialog-footer justify-content-center">
+                            <a type="button" href="https://claudiotorancio.github.io/clase5/" target="_blank"
+                                class="btn-solid theme-inverse btn-outline"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i>Visitar Sitio</a>
+                        </div>
+                    </dialog>
+
+                    <!-- Batman -->
+                    <div class="card border-0 bg-1 position-relative">
+                        <img src="./img/CVBatman.png" class="img-fluid" alt="...">
+                        <div class="card-body text-center py-0">
+                            <h4 class="card-title ">CV Batman</h4>
+                        </div>
+                        <!-- Icono informativo -->
+                        <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                            <li class="position-absolute  icon" data-bs-toggle="dialog" data-bs-target="#batman">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Modal -->
+                    <dialog class="dialog h-fit " data-bs-toggle="dialog" id="batman">
+                        <!-- Encabezado y boton cerrar -->
+                        <div class="dialog-header flex-column py-1">
+                            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+                                aria-label="Close"></button>
+                            <!-- Lineas y titulo -->
+                            <div>
+                                <h2>CV Batman</h2>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center py-6">
+                                <div class="line"></div>
+                                <i class="fa-solid fa-star fa-lg"></i>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class='modal-body text-center'>
+                            <img src="./img/CVBatman.png" class="img-fluid" alt="...">
+                            <p>Toda la descripción</p>
+                        </div>
+                        <div class="dialog-footer justify-content-center">
+                            <a type="button" href="https://claudiotorancio.github.io/cv-claudio/" target="_blank"
+                                class="btn-solid theme-inverse btn-outline"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i>Visitar Sitio</a>
+                        </div>
+                    </dialog>
+
+                    <!-- Supers -->
+                    <div class="card border-0 bg-1 position-relative">
+                        <img src="./img/super.png" class="img-fluid" alt="...">
+                        <div class="card-body text-center py-0">
+                            <h4 class="card-title ">Súpers</h4>
+                        </div>
+                        <!-- Icono informativo -->
+                        <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                            <li class="position-absolute  icon" data-bs-toggle="dialog" data-bs-target="#supers">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Modal -->
+                    <dialog class="dialog h-fit " data-bs-toggle="dialog" id="supers">
+                        <!-- Encabezado y boton cerrar -->
+                        <div class="dialog-header flex-column py-1">
+                            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+                                aria-label="Close"></button>
+                            <!-- Lineas y titulo -->
+                            <div>
+                                <h2>Súpers</h2>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center py-6">
+                                <div class="line"></div>
+                                <i class="fa-solid fa-star fa-lg"></i>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class='modal-body text-center'>
+                            <img src="./img/super.png" class="img-fluid" alt="...">
+                            <p>Toda la descripción</p>
+                        </div>
+                        <div class="dialog-footer justify-content-center">
+                            <a type="button" href="https://claudiotorancio.github.io/C14S-TDW/" target="_blank"
+                                class="btn-solid theme-inverse btn-outline"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i>Visitar Sitio</a>
+                        </div>
+                    </dialog>
+
+                    <!-- PetSop -->
+                    <div class="card border-0 bg-1 position-relative">
+                        <img src="./img/petshop.png" class="img-fluid" alt="...">
+                        <div class="card-body text-center py-0">
+                            <h4 class="card-title ">Pet Shop</h4>
+                        </div>
+                        <!-- Icono informativo -->
+                        <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                            <li class="position-absolute  icon" data-bs-toggle="dialog" data-bs-target="#petShop">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Modal -->
+                    <dialog class="dialog h-fit " data-bs-toggle="dialog" id="petShop">
+                        <!-- Encabezado y boton cerrar -->
+                        <div class="dialog-header flex-column py-1">
+                            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+                                aria-label="Close"></button>
+                            <!-- Lineas y titulo -->
+                            <div>
+                                <h2>Pet Shop</h2>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center py-6">
+                                <div class="line"></div>
+                                <i class="fa-solid fa-star fa-lg"></i>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class='modal-body text-center'>
+                            <img src="./img/petshop.png" class="img-fluid" alt="...">
+                            <p>Toda la descripción</p>
+                        </div>
+                        <div class="dialog-footer justify-content-center">
+                            <a type="button" href="https://claudiotorancio.github.io/C15S-TDW/" target="_blank"
+                                class="btn-solid theme-inverse btn-outline"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i>Visitar
+                                Sitio</a>
+                        </div>
+                    </dialog>
+
+                    <!-- Pizza -->
+                    <div class="card border-0 bg-1 position-relative">
+                        <img src="./img/piza.png" class="img-fluid" alt="...">
+                        <div class="card-body text-center py-0">
+                            <h4 class="card-title ">Pizzería</h4>
+                        </div>
+                        <!-- Icono informativo -->
+                        <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                            <li class="position-absolute  icon" data-bs-toggle="dialog" data-bs-target="#piza">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Modal -->
+                    <dialog class="dialog h-fit " data-bs-toggle="dialog" id="piza">
+                        <!-- Encabezado y boton cerrar -->
+                        <div class="dialog-header flex-column py-1">
+                            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+                                aria-label="Close"></button>
+                            <!-- Lineas y titulo -->
+                            <div>
+                                <h2>Pizzería</h2>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center py-6">
+                                <div class="line"></div>
+                                <i class="fa-solid fa-star fa-lg"></i>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class='modal-body text-center'>
+                            <img src="./img/piza.png" class="img-fluid" alt="...">
+                            <p>Toda la descripcion</p>
+                        </div>
+                        <div class="dialog-footer justify-content-center">
+                            <a type="button" href="https://claudiotorancio.github.io/C11S-TDW/" target="_blank"
+                                class="btn-solid theme-inverse btn-outline"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i>Visitar Sitio</a>
+                        </div>
+                    </dialog>
+
+                    <!-- Game Shop -->
+                    <div class="card border-0 bg-1 position-relative">
+                        <img src="./img/gameshop.png" class="img-fluid" alt="...">
+                        <div class="card-body text-center py-0">
+                            <h4 class="card-title " data-game>Game Shop</h4>
+                        </div>
+                        <!-- Icono informativo -->
+                        <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                            <li class="position-absolute  icon" data-bs-toggle="dialog" data-bs-target="#game">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Modal -->
+                    <dialog class="dialog h-fit " data-bs-toggle="dialog" id="game">
+                        <!-- Encabezado y boton cerrar -->
+                        <div class="dialog-header flex-column py-1">
+                            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+                                aria-label="Close"></button>
+                            <!-- Lineas y titulo -->
+                            <div>
+                                <h2>Game Shop</h2>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center py-6">
+                                <div class="line"></div>
+                                <i class="fa-solid fa-star fa-lg"></i>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class='modal-body text-center'>
+                            <img src="./img/gameshop.png" class="img-fluid" alt="...">
+                            <p>Toda la descripcion</p>
+                        </div>
+                        <div class="dialog-footer justify-content-center">
+                            <a type="button" href="https://claudiotorancio.github.io/menu-hamb/" target="_blank"
+                                class="btn-solid theme-inverse btn-outline"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i>Visitar Sitio</a>
+                        </div>
+                    </dialog>
+
                     <!-- Render dinamico de cards -->
 
                 </div>
@@ -158,27 +395,32 @@
                 <!-- espacio para redes sociales -->
                 <div class="text-center">
                     <h2 class="fw-bold">SIGAMOS CONECTADOS</h2>
-                    <div class=" d-flex justify-content-center align-items-center pt-3 links-redes gap-4 ">
-                        <a href="#"><i class=" fa-brands fa-facebook "></i></a>
-                        <a href=""><i class=" fa-brands fa-linkedin-in "></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    <div class=" d-flex justify-content-center align-items-center gap-3 links-redes  ">
+                        <a class="d-flex align-items-center justify-content-center" href="#"><i
+                                class=" fa-brands fa-facebook "></i></a>
+                        <a class="d-flex align-items-center justify-content-center" href=""><i
+                                class=" fa-brands fa-linkedin-in "></i></a>
+                        <a class="d-flex align-items-center justify-content-center" href=""><i
+                                class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div class="text-center">
                     <h2 class="fw-bold">SOBRE MI</h2>
-                    <p>Soy una persona creativa y emprendedora</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nulla, ad vel minus sint quia
+                        iusto ab animi nisi? Minima ab rerum itaque iure repellat nihil corporis asperiores deserunt
+                        soluta.</p>
                 </div>
-                
-                        </div>
+
             </div>
+        </div>
         <div class="text-center py-3 bg-inverse fg-white"> Todos los derechos reservados</div>
     </footer>
 
     <!-- js -->
     <script type="module" src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/7c8ea8ab2a.js" crossorigin="anonymous"></script>
-    <script type="module" src="./js/script.js"></script>
-    <script src="./js/datos.js"></script>
+    <!-- <script src="./js/datos.js"></script> -->
+    <!-- <script type="module" src="./js/script.js"></script> -->
 </body>
 
 </html>

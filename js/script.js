@@ -1,68 +1,71 @@
-//Contenedores disponivles
-const containerTarjetas = document.querySelector('[data-tarjetas');
-const cuerpoModal = document.querySelector('.modal-contenido');
 
-if (containerTarjetas) {
-  //Vaciar el contenedor antesd e render
-  containerTarjetas.innerHTML = '';
+// import { datos } from "./datos.js";
 
-  //Recorrer los datos
-  for (const dato of datos) {
+// //Contenedores disponivles
+// const containerTarjetas = document.querySelector('[data-tarjetas');
+// const cuerpoModal = document.querySelector('.modal-contenido');
 
-    //Creacion del elemento div
-    const card = document.createElement('div');
-    card.className = 'card border-0 bg-1 position-relative'
+// if (containerTarjetas) {
+//   //Vaciar el contenedor antes de renderizar
+//   containerTarjetas.innerHTML = '';
 
-    card.innerHTML = `      
-                       <img  src="${dato.imagen}" class="img-fluid" alt="..." data-imagen>
-                        <div class="card-body text-center py-0">
-                            <h4 class="card-title " data-titulo>${dato.titulo}</h4>
-                        </div>
-                          <!-- Icono informativo -->
-                        <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
-                              <li class="position-absolute  icon" data-bs-toggle="dialog"
-                               data-bs-target="#myDialog"> 
-                               <i class="fa-solid fa-circle-info"></i>
-                               </li>                  
-                            </ul>
-                  `
-    containerTarjetas.appendChild(card); //Agregar al contendio existente
+//   //Recorrer los datos
+//   for (const dato of datos) {
 
-    // evento para mostrar el modal
-    card.querySelector('[data-bs-target]').addEventListener('click', (e) => {
-      e.preventDefault()
+//     //Creacion del elemento div
+//     const card = document.createElement('div');
+//     card.className = 'card border-0 bg-1 position-relative'
 
-      const contenido = `
-            <!-- Encabezado y boton cerrar -->
-            <div class="dialog-header flex-column py-1">
-                <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
-                 <!-- Lineas y titulo -->
-                   <div>
-                        <h2>${dato.titulo}</h2>
-                    </div>
-                    <div class="d-flex gap-2 align-items-center py-6">
-                        <div class="line"></div>
-                          <i class="fa-solid fa-star fa-lg"></i>
-                        <div class="line"></div>
-                    </div>
-            </div>
-             <div class= 'modal-body text-center'>
-                    <img src="${dato.imagen}" class="img-fluid"  alt="..." data-imagen>        
-                    <p>${dato.descripcion}</p>
-             </div>
-              <div class="dialog-footer justify-content-center">
-                <a type="button"  href="${dato.url}" target="_blank" class="btn-solid theme-inverse btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i>Visitar Sitio</a>
-              </div>
-              `
+//     card.innerHTML = `      
+//                        <img  src="${dato.imagen}" class="img-fluid" alt="..." data-imagen>
+//                         <div class="card-body text-center py-0">
+//                             <h4 class="card-title " data-titulo>${dato.titulo}</h4>
+//                         </div>
+//                           <!-- Icono informativo -->
+//                         <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+//                               <li class="position-absolute  icon" data-bs-toggle="dialog"
+//                                data-bs-target="#myDialog"> 
+//                                <i class="fa-solid fa-circle-info"></i>
+//                                </li>                  
+//                             </ul>
+//                   `
+//     containerTarjetas.appendChild(card); //Agregar al contendio existente
 
-      cuerpoModal.innerHTML = contenido; //anexar el contenido al contenedor del modal
-    });
+//     // evento para mostrar el modal
+//     card.querySelector('[data-bs-target]').addEventListener('click', (e) => {
+//       e.preventDefault()
 
-  };
+//       const contenido = `
+//             <!-- Encabezado y boton cerrar -->
+//             <div class="dialog-header flex-column py-1">
+//                 <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+//                  <!-- Lineas y titulo -->
+//                    <div>
+//                         <h2>${dato.titulo}</h2>
+//                     </div>
+//                     <div class="d-flex gap-2 align-items-center py-6">
+//                         <div class="line"></div>
+//                           <i class="fa-solid fa-star fa-lg"></i>
+//                         <div class="line"></div>
+//                     </div>
+//             </div>
+//              <div class= 'modal-body text-center'>
+//                     <img src="${dato.imagen}" class="img-fluid"  alt="..." data-imagen>        
+//                     <p>${dato.descripcion}</p>
+//              </div>
+//               <div class="dialog-footer justify-content-center">
+//                 <a type="button"  href="${dato.url}" target="_blank" class="btn-solid theme-inverse btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i>Visitar Sitio</a>
+//               </div>
+//               `
 
-} else {
-  console.log('No hay contenedor para rendrizar');
-};
+//       cuerpoModal.innerHTML = contenido; //anexar el contenido al contenedor del modal
+//     });
+
+//   };
+
+// } else {
+//   console.log('No hay contenedor para rendrizar');
+// };
 
 
 
