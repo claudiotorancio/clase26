@@ -1,13 +1,53 @@
+/* Body */
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    background-color: #ffff;
+}
+
+
 /* avatar imagen ppal */
 .avatar {
     width: 200px;
     height: 200px;
 }
 
+/* header */
+
+.logo {
+    width: 3rem;
+}
+
+.mi-navbar {
+    background-color: #2c3e50;
+}
+
 .line {
     background-color: #e0dfdf;
     height: 2px;
     width: 100px;
+}
+
+/* main */
+main {
+    background-color: #f4f4f9;
+}
+
+/* seccion hero */
+.mi-hero {
+    background-color: #34495e;
+    color: white;
+}
+
+/* seccion habilidades */
+
+
+.card-skill>img {
+    max-height: 70px;
+}
+
+.card-skill>.card-body {
+    padding-bottom: 0;
 }
 
 /* Estilos para el icono de info en card  */
@@ -27,7 +67,7 @@
     transform: translateY(-60px) rotate(0);
 }
 
-.card:hover> :not(.icons) {
+.card:not(.card-skill):hover> :not(.icons) {
     background-color: #c7babb;
     opacity: 0.5;
 }
@@ -38,15 +78,24 @@
 }
 
 /* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+}
+
 .links-redes a {
     text-decoration: none;
     border: 1px solid;
     border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
-    color: black;
+    color: white;
 }
 
 .links-redes a i {
     font-size: 1.5rem;
+}
+
+.mi-derecho {
+    background-color: #2c3e50;
 }
