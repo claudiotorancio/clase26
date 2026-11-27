@@ -50,6 +50,12 @@ main {
     padding-bottom: 0;
 }
 
+/* sección certificaciones */
+.card-certificacion>img {
+    max-height: 150px;
+    object-fit: contain;
+}
+
 /* Estilos para el icono de info en card  */
 
 .icon {
@@ -67,7 +73,7 @@ main {
     transform: translateY(-60px) rotate(0);
 }
 
-.card:not(.card-skill):hover> :not(.icons) {
+.card:not(.card-skill, .card-certificacion):hover> :not(.icons) {
     background-color: #c7babb;
     opacity: 0.5;
 }
